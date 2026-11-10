@@ -1,0 +1,19 @@
+[
+  {"id": "M-001", "requirement": "R-001", "check": "clock", "modes": ["sil", "hil"], "scenario": "normal_ramp"},
+  {"id": "M-002", "requirement": "R-002", "check": "noise", "modes": ["unit"]},
+  {"id": "M-003", "requirement": "R-003", "check": "heater_model", "modes": ["unit"]},
+  {"id": "M-004", "requirement": "R-004", "check": "flow_model", "modes": ["unit"]},
+  {"id": "M-005", "requirement": "R-005", "check": "ramp", "modes": ["sil", "hil"], "scenario": "normal_ramp"},
+  {"id": "M-006", "requirement": "R-006", "check": "pid", "modes": ["unit"]},
+  {"id": "M-007", "requirement": "R-007", "check": "flow", "modes": ["sil", "hil"], "scenario": "normal_ramp"},
+  {"id": "M-008", "requirement": "R-008", "check": "drift", "modes": ["sil", "hil"], "scenario": "sensor_drift"},
+  {"id": "M-009", "requirement": "R-009", "check": "stuck_open", "modes": ["sil", "hil"], "scenario": "stuck_valve"},
+  {"id": "M-010", "requirement": "R-010", "check": "heat_pulse", "modes": ["sil", "hil"], "scenario": "over_temperature"},
+  {"id": "M-011", "requirement": "R-011", "check": "stuck_closed", "modes": ["sil", "hil"], "scenario": "low_pressure"},
+  {"id": "M-012", "requirement": "R-012", "check": "latch", "modes": ["sil", "hil"], "scenario": "over_temperature"},
+  {"id": "M-013", "requirement": "R-013", "check": "heater_registers", "modes": ["hil"]},
+  {"id": "M-014", "requirement": "R-014", "check": "gauge_registers", "modes": ["hil"]},
+  {"id": "M-015", "requirement": "R-015", "check": "nonfinite", "modes": ["unit"]},
+  {"id": "M-016", "requirement": "R-016", "check": "parity", "modes": ["cross-mode"], "scenario": "normal_ramp"},
+  {"id": "M-017", "requirement": "R-017", "check": "limits", "modes": ["unit"]}
+]

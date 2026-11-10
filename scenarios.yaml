@@ -1,0 +1,27 @@
+clock:
+  dt_s: 0.25
+  steps: 400
+  seed: 42
+recipe:
+  start_c: 25.0
+  target_c: 70.0
+  ramp_s: 30.0
+  flow_sccm: 24.0
+scenarios:
+  normal_ramp: null
+  sensor_drift:
+    kind: temperature_drift
+    tick: 140
+    value: 2.0  # °C of measurement bias per simulated second
+  stuck_valve:
+    kind: stuck_valve
+    tick: 60
+    value: 1.0  # mechanically stuck open
+  over_temperature:
+    kind: heat_pulse
+    tick: 72
+    value: 115.0  # one-time increase in true chamber temperature, °C
+  low_pressure:
+    kind: stuck_valve
+    tick: 60
+    value: 0.0  # mechanically stuck closed
